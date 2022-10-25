@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lte_service_providers",
+  "info": {
+    "singularName": "lte-service-provider",
+    "pluralName": "lte-service-providers",
+    "displayName": "LTE Service Provider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "lte_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lte-category.lte-category",
+      "inversedBy": "lte_service_providers"
+    }
+  }
+}

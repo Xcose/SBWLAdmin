@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lte_categories",
+  "info": {
+    "singularName": "lte-category",
+    "pluralName": "lte-categories",
+    "displayName": "LTE Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "ltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lte.lte"
+    },
+    "lte_service_providers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lte-service-provider.lte-service-provider",
+      "inversedBy": "lte_categories"
+    }
+  }
+}
