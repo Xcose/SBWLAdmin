@@ -19,6 +19,12 @@
     },
     "Price": {
       "type": "decimal"
+    },
+    "lte_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lte-category.lte-category",
+      "inversedBy": "ltes"
     }
   }
 }

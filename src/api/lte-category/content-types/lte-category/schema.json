@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lte-category",
     "pluralName": "lte-categories",
-    "displayName": "LTE Category"
+    "displayName": "LTE Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,8 @@
     "ltes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::lte.lte"
+      "target": "api::lte.lte",
+      "mappedBy": "lte_category"
     },
     "lte_service_providers": {
       "type": "relation",
