@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::lte-category.lte-category",
       "inversedBy": "ltes"
+    },
+    "lte_service_provider": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lte-service-provider.lte-service-provider",
+      "inversedBy": "ltes"
     }
   }
 }

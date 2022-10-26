@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lte-service-provider",
     "pluralName": "lte-service-providers",
-    "displayName": "LTE Service Provider"
+    "displayName": "LTE Service Provider",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
       "relation": "manyToMany",
       "target": "api::lte-category.lte-category",
       "mappedBy": "lte_service_providers"
+    },
+    "ltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lte.lte",
+      "mappedBy": "lte_service_provider"
     }
   }
 }
