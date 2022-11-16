@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fibres",
+  "info": {
+    "singularName": "fibre",
+    "pluralName": "fibres",
+    "displayName": "Fibre "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "fibre_service_providers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fibre-service-provider.fibre-service-provider",
+      "mappedBy": "fibre"
+    }
+  }
+}

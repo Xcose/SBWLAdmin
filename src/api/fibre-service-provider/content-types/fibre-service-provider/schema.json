@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fibre_service_providers",
+  "info": {
+    "singularName": "fibre-service-provider",
+    "pluralName": "fibre-service-providers",
+    "displayName": "Fibre Service Provider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "fibre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fibre.fibre",
+      "inversedBy": "fibre_service_providers"
+    }
+  }
+}
