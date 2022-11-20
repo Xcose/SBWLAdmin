@@ -15,9 +15,9 @@
     "Name": {
       "type": "string"
     },
-    "fibre": {
+    "fibres": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::fibre.fibre",
       "inversedBy": "fibre_service_providers"
     }

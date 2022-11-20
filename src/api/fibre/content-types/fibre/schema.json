@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fibre",
     "pluralName": "fibres",
-    "displayName": "Fibre "
+    "displayName": "Fibre ",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,9 +23,9 @@
     },
     "fibre_service_providers": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::fibre-service-provider.fibre-service-provider",
-      "mappedBy": "fibre"
+      "mappedBy": "fibres"
     }
   }
 }
