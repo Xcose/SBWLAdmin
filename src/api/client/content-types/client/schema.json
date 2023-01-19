@@ -36,7 +36,7 @@
     "city": {
       "type": "string"
     },
-    "provice": {
+    "province": {
       "type": "string"
     },
     "postalCode": {

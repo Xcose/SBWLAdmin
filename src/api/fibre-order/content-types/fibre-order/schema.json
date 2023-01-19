@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fibre_orders",
+  "info": {
+    "singularName": "fibre-order",
+    "pluralName": "fibre-orders",
+    "displayName": "Fibre Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "fibre": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fibre.fibre"
+    }
+  }
+}
