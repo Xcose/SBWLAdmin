@@ -18,14 +18,8 @@
     "surname": {
       "type": "string"
     },
-    "email": {
-      "type": "email"
-    },
     "mobile": {
       "type": "string"
-    },
-    "IDnumber": {
-      "type": "integer"
     },
     "street": {
       "type": "string"
@@ -40,6 +34,12 @@
       "type": "string"
     },
     "postalCode": {
+      "type": "string"
+    },
+    "IDnumber": {
+      "type": "string"
+    },
+    "email": {
       "type": "string"
     }
   }
