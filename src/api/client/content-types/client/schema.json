@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "IDnumber": {
+      "type": "integer"
+    },
+    "street": {
+      "type": "string"
+    },
+    "suburb": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "provice": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    }
+  }
+}
